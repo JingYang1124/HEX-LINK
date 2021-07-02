@@ -1,4 +1,3 @@
-from win32com.client import Dispatch    
 import win32com.client    
 import math
 import numpy as np
@@ -79,55 +78,6 @@ def Rearrange_Data_Greater_Firset(list1,list2):
                 list1[i],list1[j]=list1[j],list1[i]
     return list1,list2
 
-def Calculate_Entropy_Gain(Categories,Feature_Data,Seperate_Num):
-     Sample_Num = len(Categories)
-     Categories_Num = max(Categories)
-     Feature_Max = max(Feature_Data)
-     Feature_Min = min(Feature_Data)
-     Re_Categories , Re_Feature_Data = Rearrange_Data_Smaller_Firset(Categories,Feature_Data)
-
-     # print(Re_Categories)
-     # print(Re_Feature_Data)
-
-     Total_Entropy = 0
-     
-     i = 1
-     while(i <= Categories_Num):
-         Total_Entropy += -1 * Categories.count(i)/Sample_Num * math.log(Categories.count(i)/Sample_Num,2)
-         i+=1
-     # print(Total_Entropy)    
-     
-     Seg_Length = int((Feature_Max - Feature_Min)/Seperate_Num)
-     
-     Condition_Entropy = 0
-     s = 1
-     start_index = 0
-     end_index = 0
-     while(s <= Seperate_Num):
-         if(s > 1):
-             while(Re_Feature_Data[start_index] <= (Seg_Length * (s - 1) + Feature_Min)):
-                 start_index += 1
-         if (s != Seperate_Num):
-             while(Re_Feature_Data[end_index] <= (Seg_Length * s + Feature_Min)):
-                 end_index += 1
-         else:
-             end_index = Sample_Num
-         # print(start_index)
-         # print(end_index)
-         # print("***********")
-         i = 1
-         Condition_Entropy_Seg = 0
-         while(i <= Categories_Num):
-             Category_Count = Re_Categories[start_index:end_index].count(i)
-             # print(Category_Count)
-             if(Category_Count != 0):
-                 Condition_Entropy_Seg += -1 * Category_Count/(end_index - start_index) * math.log(Category_Count/(end_index - start_index),2)
-             i+=1
-         Condition_Entropy += Condition_Entropy_Seg * ((end_index - start_index))/Sample_Num
-         s += 1
-         # print("--------------")
-     print(Total_Entropy - Condition_Entropy)
-     return Total_Entropy - Condition_Entropy
      
 
 def Calculate_Multi_D_Entropy_Gain(Categories,Feature_Data,Seperate_Num):
@@ -140,7 +90,6 @@ def Calculate_Multi_D_Entropy_Gain(Categories,Feature_Data,Seperate_Num):
     Segment_Length = 1/Seperate_Num
     Sample_Num = len(Categories)
     Categories_Num = max(Categories) 
-
     Total_Entropy = 0
      
     i = 1
@@ -148,7 +97,7 @@ def Calculate_Multi_D_Entropy_Gain(Categories,Feature_Data,Seperate_Num):
         Total_Entropy += -1 * list(Categories).count(i)/Sample_Num * \
         math.log(list(Categories).count(i)/Sample_Num,2)
         i+=1
-    #print(Total_Entropy)
+
     Condition_Entropy_Matrix = np.zeros((int(Categories_Num), int(pow(Seperate_Num,Feature_Num))))
     for row in range(0,Sample_Num):
         Condition_Entropy_index = 0
@@ -156,8 +105,7 @@ def Calculate_Multi_D_Entropy_Gain(Categories,Feature_Data,Seperate_Num):
             Condition_Entropy_index += pow(Seperate_Num,col) * \
             int(Feature_Data[row][col]/Segment_Length)
         Condition_Entropy_Matrix[int(Categories[row]) - 1][Condition_Entropy_index] += 1    
-    #print(Condition_Entropy_Matrix)    
-    
+
     Condition_Entropy = 0
     for col in range(0, int(pow(Seperate_Num,Feature_Num))):
         Sample_Num_This_Seg = 0
@@ -168,13 +116,12 @@ def Calculate_Multi_D_Entropy_Gain(Categories,Feature_Data,Seperate_Num):
                 if Condition_Entropy_Matrix[row][col] != 0:
                     Condition_Entropy += -1 * (Sample_Num_This_Seg/Sample_Num) * \
                     Condition_Entropy_Matrix[row][col]/Sample_Num_This_Seg * \
-                    math.log(Condition_Entropy_Matrix[row][col]/Sample_Num_This_Seg,2)
-            
+                    math.log(Condition_Entropy_Matrix[row][col]/Sample_Num_This_Seg,2)        
+    print("Info_Gain is:")
     print(Total_Entropy - Condition_Entropy)
     return Total_Entropy - Condition_Entropy
     
-    
-  
+     
 def Uniform_List(list_data):
     tmp_max = max(list_data) *1.02 #避免出现1与0这样的值
     tmp_min = min(list_data) *0.98
@@ -184,6 +131,7 @@ def Uniform_List(list_data):
       i/=(tmp_max - tmp_min)  #对数据逐个处理
       output_list.append(i)
     return output_list
+
 
 if __name__ == "__main__":    
 
@@ -198,23 +146,9 @@ if __name__ == "__main__":
       while(xls.getCell('All_Categories',row,col) is not None):
         Categories.append(xls.getCell('All_Categories',row,col))
         row += 1
-      # print(xls.getCell('All_Categories',1,col))
-      # print(Categories)
-      #-----------------------------------------------------------------------
+
       col=4
-      """
-      while(xls.getCell('All_Categories',1,col) is not None):
-          row = 2
-          feature_data = []
-          while(xls.getCell('All_Categories',row,col) is not None):
-             feature_data.append(xls.getCell('All_Categories',row,col))
-             row += 1
-          print(xls.getCell('All_Categories',1,col))
-          Feature_Name.append(xls.getCell('All_Categories',1,col))
-          # print(feature_data)
-          Feature_Entropy_Gain.append(Calculate_Entropy_Gain(Categories,feature_data,3))
-          col+=1
-      """
+
       feature_data = []
 
       First_Feature_Col = 4
@@ -246,7 +180,8 @@ if __name__ == "__main__":
           First_Feature_Col += 1
       
       Feature_Name,Feature_Entropy_Gain = Rearrange_Data_Greater_Firset(Feature_Name,Feature_Entropy_Gain)
-      print(Feature_Name)
+      """从大到小排列特征组合，越靠前的越适合作为特征"""
+      print(Feature_Name) 
 
       
       xls.save()    

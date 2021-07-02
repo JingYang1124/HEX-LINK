@@ -7,11 +7,13 @@
 
 **这是一套可适用于PC端游戏的体感操作设备。**
 
-![](https://jingyang1124.oss-cn-shanghai.aliyuncs.com/img/DIY_Project/HEX_LINK/1.PNG)
+![](https://jingyang1124.oss-cn-shanghai.aliyuncs.com/img/DIY_Project/HEX_LINK/Hex_Link_ASM%2B4.JPG)
 
 项目演示视频链接：  
 
+[【开源·自制】真正的体感"只狼"_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1qy4y1M7Zw)
 
+[【自制】"真 · 脚动档"极品飞车--程序员的健身日常_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1m54y1L7WU)
 
 本仓库文件夹结构： 
 
@@ -30,7 +32,7 @@
 │  └─Hex_Link_Trans # 发送端PCB工程
 ├─model # 接收端外壳3维模型
 │  ├─Solidworks_Project # 2018版本Solidworks工程
-│  └─STL # STL文件，可直接用于3D打印
+│  └─STL_TAP # STL文件，可直接用于3D打印.TAP文件是顶层亚克力板的CNC加工文件
 ├─references # 参考文档
 └─tools # 额外的脚本工具
 ```

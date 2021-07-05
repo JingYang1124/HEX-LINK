@@ -3,7 +3,6 @@
 #### ![version: 1.2 (shields.io)](https://img.shields.io/badge/version-1.2-brightgreen)
 
 #### 介绍
-
 **HEX LINK**: **H**igher-order **EX**cess **LINK**
 
 **这是一套可适用于PC端游戏的体感操作设备。**

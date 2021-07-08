@@ -38,7 +38,24 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=Arduino_Mouse_Keyboard.PcbDoc
+DocumentPath=Nano_Jtag.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=OTRBEYFQ
+
+[Document2]
+DocumentPath=Nano_Jtag.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -54,25 +71,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OBQETHQV
 
-[Document2]
-DocumentPath=Arduino_Mouse_Keyboard.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=0
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=OTRBEYFQ
-
 [Document3]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\CAMtastic1.Cam
+DocumentPath=Project Outputs for Nano_Jtag\CAMtastic1.Cam
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -89,7 +89,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document4]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\CAMtastic2.Cam
+DocumentPath=Project Outputs for Nano_Jtag\CAMtastic2.Cam
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -106,107 +106,107 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\Arduino_Mouse_Keyboard-RoundHoles.TXT
+DocumentPath=Project Outputs for Nano_Jtag\Design Rule Check - Nano_Jtag.html
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\Arduino_Mouse_Keyboard-SlotHoles.TXT
+DocumentPath=Project Outputs for Nano_Jtag\Nano_Jtag.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\Arduino_Mouse_Keyboard.DRR
+DocumentPath=Project Outputs for Nano_Jtag\Nano_Jtag.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\Arduino_Mouse_Keyboard.EXTREP
+DocumentPath=Project Outputs for Nano_Jtag\Nano_Jtag.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\Arduino_Mouse_Keyboard.GBL
+DocumentPath=Project Outputs for Nano_Jtag\Nano_Jtag.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\Arduino_Mouse_Keyboard.GBO
+DocumentPath=Project Outputs for Nano_Jtag\Nano_Jtag.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\Arduino_Mouse_Keyboard.GBP
+DocumentPath=Project Outputs for Nano_Jtag\Nano_Jtag.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\Arduino_Mouse_Keyboard.GBS
+DocumentPath=Project Outputs for Nano_Jtag\Nano_Jtag.GD1
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\Arduino_Mouse_Keyboard.GD1
+DocumentPath=Project Outputs for Nano_Jtag\Nano_Jtag.GG1
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\Arduino_Mouse_Keyboard.GG1
+DocumentPath=Project Outputs for Nano_Jtag\Nano_Jtag.GKO
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\Arduino_Mouse_Keyboard.GKO
+DocumentPath=Project Outputs for Nano_Jtag\Nano_Jtag.GM1
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\Arduino_Mouse_Keyboard.GM1
+DocumentPath=Project Outputs for Nano_Jtag\Nano_Jtag.GM4
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\Arduino_Mouse_Keyboard.GM4
+DocumentPath=Project Outputs for Nano_Jtag\Nano_Jtag.GM13
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\Arduino_Mouse_Keyboard.GM13
+DocumentPath=Project Outputs for Nano_Jtag\Nano_Jtag.GM14
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\Arduino_Mouse_Keyboard.GM14
+DocumentPath=Project Outputs for Nano_Jtag\Nano_Jtag.GM15
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\Arduino_Mouse_Keyboard.GM15
+DocumentPath=Project Outputs for Nano_Jtag\Nano_Jtag.GM16
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\Arduino_Mouse_Keyboard.GM16
+DocumentPath=Project Outputs for Nano_Jtag\Nano_Jtag.GPB
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\Arduino_Mouse_Keyboard.GPB
+DocumentPath=Project Outputs for Nano_Jtag\Nano_Jtag.GPT
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\Arduino_Mouse_Keyboard.GPT
+DocumentPath=Project Outputs for Nano_Jtag\Nano_Jtag.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\Arduino_Mouse_Keyboard.GTL
+DocumentPath=Project Outputs for Nano_Jtag\Nano_Jtag.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\Arduino_Mouse_Keyboard.GTO
+DocumentPath=Project Outputs for Nano_Jtag\Nano_Jtag.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument22]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\Arduino_Mouse_Keyboard.GTP
+DocumentPath=Project Outputs for Nano_Jtag\Nano_Jtag.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument23]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\Arduino_Mouse_Keyboard.GTS
+DocumentPath=Project Outputs for Nano_Jtag\Nano_Jtag.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument24]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\Arduino_Mouse_Keyboard.LDP
+DocumentPath=Project Outputs for Nano_Jtag\Nano_Jtag.REP
 DItemRevisionGUID=
 
 [GeneratedDocument25]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\Arduino_Mouse_Keyboard.REP
+DocumentPath=Project Outputs for Nano_Jtag\Nano_Jtag.RUL
 DItemRevisionGUID=
 
 [GeneratedDocument26]
-DocumentPath=Project Outputs for Arduino_Mouse_Keyboard\Arduino_Mouse_Keyboard.RUL
+DocumentPath=Project Outputs for Nano_Jtag\Nano_Jtag.TXT
 DItemRevisionGUID=
 
 [Configuration1]
@@ -367,7 +367,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=PDFCreator
+TargetPrinter=Phantom Print to Evernote
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
@@ -481,7 +481,7 @@ OutputDefault3=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
-TargetPrinter=PDFCreator
+TargetPrinter=Phantom Print to Evernote
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Drill
 OutputName1=Drill Drawing/Guides

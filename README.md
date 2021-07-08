@@ -30,6 +30,7 @@
 ├─hardware # 硬件（PCB工程）
 │  ├─Hex_Link_Rec # 接收端PCB工程
 │  └─Hex_Link_Trans # 发送端PCB工程
+│  └─Nano_Jtag_Pin # 转接板：用来烧录Nano的bootloader
 ├─model # 接收端外壳3维模型
 │  ├─Solidworks_Project # 2018版本Solidworks工程
 │  └─STL_TAP # STL文件，可直接用于3D打印.TAP文件是顶层亚克力板的CNC加工文件

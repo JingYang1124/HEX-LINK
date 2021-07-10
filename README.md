@@ -7,7 +7,7 @@
 
 **这是一套可适用于PC端游戏的体感操作设备。**
 
-![](https://jingyang1124.oss-cn-shanghai.aliyuncs.com/img/DIY_Project/HEX_LINK/Hex_Link_ASM%2B4.JPG)
+![Hex_Link+4](https://jingyang1124.oss-cn-shanghai.aliyuncs.com/img/DIY_Project/HEX_LINK/Hex_Link_ASM%2B4.JPG)
 
 项目演示视频链接：  
 

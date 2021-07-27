@@ -23,3 +23,11 @@
 >
 > [Arduino--VS Code开发Arduino PlatformIO IDE_似水流年-CSDN博客](https://liefyuan.blog.csdn.net/article/details/114917179?utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~OPENSEARCH~default-1.control&dist_request_id=1331647.20492.16184600638122219&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~OPENSEARCH~default-1.control)
 
+
+
+**Bootloaders**中的两个hex是需要分别下载接收端与发送端的芯片中。
+
+> Leonardo_atmega32u4.hex需要下载至接收端的atmega32U4芯片中。熔丝位配置：低位值FF-高位值D8-拓展位值CB
+>
+> Nano_atmega328.hex需要下载至发送端的atmega328P芯片中。          熔丝位配置：低位值FF-高位值DA-拓展位值FD
+

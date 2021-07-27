@@ -24,13 +24,14 @@
 │  │  ├─Additional_Libraries # 里面的文件夹需要复制到Arduino IDE安装目录下的libraries文件夹
 │  │  ├─Hex_Link_Leonardo # 需要下载至接收端的程序
 │  │  └─Hex_Link_Nano # 需要下载至发送端的程序
+│  ├─Bootloaders # 需要下载至芯片的arduino bootloader 
 │  └─Vscode_PlatformIO_Proj # VScode PlatformIO版工程 
 │      ├─Hex_Link_Leonardo # 需要下载至接收端的程序
 │      └─Hex_Link_Nano # 需要下载至发送端的程序
 ├─hardware # 硬件（PCB工程）
 │  ├─Hex_Link_Rec # 接收端PCB工程
 │  └─Hex_Link_Trans # 发送端PCB工程
-│  └─Nano_Jtag_Pin # 转接板：用来烧录Nano的bootloader
+│  └─Nano_Jtag_Pin # 转接板：用来烧录Nano bootloader的Jtag口转接板
 ├─model # 接收端外壳3维模型
 │  ├─Solidworks_Project # 2018版本Solidworks工程
 │  └─STL_TAP # STL文件，可直接用于3D打印.TAP文件是顶层亚克力板的CNC加工文件

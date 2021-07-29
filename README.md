@@ -31,7 +31,7 @@
 ├─hardware # 硬件（PCB工程）
 │  ├─BOM   # PCB的物料清单，包含参考的购买链接（链接仅作参考，在其他任何店铺购买相同型号即可）
 │  ├─Hex_Link_Rec # 接收端PCB工程
-│  └─Hex_Link_Trans # 发送端PCB工程
+│  ├─Hex_Link_Trans # 发送端PCB工程
 │  └─Nano_Jtag_Pin # 转接板：用来烧录Nano bootloader的Jtag口转接板
 ├─model # 接收端外壳3维模型
 │  ├─Solidworks_Project # 2018版本Solidworks工程
